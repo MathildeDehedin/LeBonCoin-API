@@ -1,7 +1,5 @@
 ## API Le Bon Coin
 
-### Made with _Node.js_, _MongoDB_, _Cloudinary_
-
 ##### Créer un compte
 
 ###### **/user/sign_up** dans user.js
