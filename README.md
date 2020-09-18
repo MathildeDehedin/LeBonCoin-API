@@ -28,16 +28,16 @@
 
 ###### **/offer/delete** dans offer.js
 
-###### La route "/offer/delete" permet de supprimer une annonce via son id. L'utilistaeur doit également être enregistré pour supprimer l'annonce.
+###### La route "/offer/delete" permet de supprimer une annonce via son id. L'utilisateur doit également être enregistré pour supprimer l'annonce.
 
 ##### Trier les annonces
 
 ###### **/offer/with-count** dans offer.js
 
-###### La route "/offer/with-count" permet d'obtenir toutes les annonces. Il est possible de filtrer ces annonces en faisant une recherche par titre, par prix minimum et/ou maximum. Il est possible de trier ces dernières par date (croissante ou ascendante) ou par prix (croissant ou décroissant).
+###### La route "/offer/with-count" permet d'obtenir toutes les annonces. Il est possible de les filtrer en recherchant par titre, par prix minimum et/ou maximum et de les trier par date (croissante ou ascendante) ou par prix (croissant ou décroissant).
 
 ##### Lire une annonce
 
 ###### **/offer/:id** dans offer.js
 
-###### Cette route permet d'accèder à une seul annonce grâce à son id.
+###### Cette route permet d'accèder à une seule annonce grâce à son id.

@@ -20,9 +20,7 @@ router.post("/user/sign_up", async (req, res) => {
       const salt = uid2(16);
       const hash = SHA256(password + salt).toString(encBase64);
       const token = uid2(16);
-      // console.log("salt = " + salt);
-      // console.log("hash = " + hash);
-      // console.log("token = " + token);
+
       const email = req.fields.email;
       const username = req.fields.username;
       const phone = req.fields.phone;
