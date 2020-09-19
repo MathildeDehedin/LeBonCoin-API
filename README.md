@@ -198,7 +198,7 @@ Réponse attendue de la requête :
 
 #### Route en get : **/offer/with-count** dans offer.js
 
-La route "/offer/with-count" permet d'obtenir toutes les annonces. Il est possible de les filtrer en recherchant par titre, par prix minimum et/ou maximum et de les trier par date (croissante ou ascendante) ou par prix (croissant ou décroissant). <br>
+La route "/offer/with-count" permet d'obtenir toutes les annonces. Il est possible de les filtrer en recherchant par titre, par prix minimum et/ou maximum et de les trier par date ou par prix. <br>
 
 Exemple de requête sur Postamn :
 http://localhost:3000/offer/with-count
