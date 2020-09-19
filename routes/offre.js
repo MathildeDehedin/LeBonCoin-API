@@ -5,7 +5,7 @@ const cloudinary = require("cloudinary").v2;
 
 const userRoute = require("./user");
 const User = require("../model/User");
-const Offre = require("../model/Offre");
+const Offre = require("../model/Offer");
 
 const app = express();
 app.use(formidable());

@@ -1,34 +1,79 @@
-## API Le Bon Coin
+# API Le Bon Coin
 
-##### Créer un compte
+### _Languages_ & _Packages_
 
-###### **/user/sign_up** dans user.js
+[Mongoose](https://www.npmjs.com/package/mongoose)
+[Cloudinary](https://cloudinary.com/documentation/node_integration#node_js_getting_started_guide)
+[Crypto-js](https://www.npmjs.com/package/crypto-js)
+[uid2](https://github.com/coreh/uid2)
 
-###### La route "/user/sign_up" permet de créer un nouvel utilisateur dans la BDD. On vérifie que l'email n'est pas déjà présent en BDD et que tous les paramètres (email, username, phone & password via un hash et un salt) sont envoyés afin de créer un compte.
+### - Créer un compte
 
-##### Se connecter
+#### **/user/sign_up** dans user.js
 
-###### **/user/log_in** dans user.js
+La route "/user/sign_up" permet de créer un nouvel utilisateur dans la BDD. On vérifie que l'email n'est pas déjà présent en BDD et que tous les paramètres (email, username, phone & password via un hash et un salt) sont envoyés afin de créer un compte.
 
-###### La route "/user/log_in" permet à l'utilisateur de se connecter. On vérifie d'abord que l'email et le password sont envoyés et que l'email est présent en BDD. Puis, on vérifie que le password renseigné correspond au password encrypté dans la BDD.
+```
+{
+    "email" : "pierre.dupont@yahoo.com",
+    "username" : "pierre-dup",
+    "phone" : "0678901234",
+    "password" : "pierre-dup"
+}
+```
 
-##### Publier une annonce
+### - Se connecter
 
-###### **/offer/publish** dans offer.js
+#### **/user/log_in** dans user.js
 
-###### La route "/offer/publish" permet de créer une nouvelle annonce en BDD qui sera liée à un utilisateur grâce à une référence. On vérifie que le titre, le prix, la description et une photo sont envoyés lors de la requête.
+La route "/user/log_in" permet à l'utilisateur de se connecter. On vérifie d'abord que l'email et le password sont envoyés et que l'email est présent en BDD. Puis, on vérifie que le password renseigné correspond au password encrypté dans la BDD.
 
-##### Modifier une annonce
+```
+{
+    "email" : "pierre.dupont@yahoo.com",
+    "password" : "pierre-dup"
+}
+```
 
-###### **/offer/put** dans offer.js
+### - Publier une annonce
 
-###### La route "/offer/put" permet de modifier le contenu de l'annonce (titre, prix, description, photo) d'un utilisateur. L'utilisateur doit être enregistré afin de pouvoir la modifier
+#### **/offer/publish** dans offer.js
 
-##### Supprimer une annonce
+La route "/offer/publish" permet de créer une nouvelle annonce en BDD qui sera liée à son utilisateur grâce à une référence. On vérifie que le titre, le prix, la description et une photo sont envoyés lors de la requête.
 
-###### **/offer/delete** dans offer.js
+```
+{
+    "title" : "Voiture Peugeot 206",
+    "price" : 4600,
+    "description" : "Voiture seconde main, prix à débattre",
+    "picture" : {}
+}
+```
 
-###### La route "/offer/delete" permet de supprimer une annonce via son id. L'utilisateur doit également être enregistré pour supprimer l'annonce.
+### Modifier une annonce
+
+#### **/offer/put** dans offer.js
+
+La route "/offer/put" permet de modifier le contenu de l'annonce (titre, prix, description, photo) d'un utilisateur. L'utilisateur doit être enregistré afin de pouvoir la modifier
+
+```
+{
+    "title" : "Peugeot 206",
+}
+```
+
+```
+{
+    "price" : 5000,
+    "description" : "Voiture seconde main, prix fixe"
+}
+```
+
+### Supprimer une annonce
+
+#### **/offer/delete** dans offer.js
+
+La route "/offer/delete" permet de supprimer une annonce via son id. L'utilisateur doit également être enregistré pour supprimer l'annonce.
 
 ##### Trier les annonces
 
