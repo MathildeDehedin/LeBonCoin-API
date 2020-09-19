@@ -201,7 +201,7 @@ Réponse attendue de la requête :
 La route "/offer/with-count" permet d'obtenir toutes les annonces. Il est possible de les filtrer en recherchant par titre, par prix minimum et/ou maximum et de les trier par date (croissante ou ascendante) ou par prix (croissant ou décroissant). <br>
 
 Exemple de requête sur Postamn :
-http://localhost:3000/offer/with-count?title=ordinateur
+http://localhost:3000/offer/with-count
 
 Réponse attendue de la requête :
 
