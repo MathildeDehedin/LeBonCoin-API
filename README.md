@@ -2,10 +2,10 @@
 
 ### _Languages_ & _Packages_
 
-[Mongoose](https://www.npmjs.com/package/mongoose)
-[Cloudinary](https://cloudinary.com/documentation/node_integration#node_js_getting_started_guide)
-[Crypto-js](https://www.npmjs.com/package/crypto-js)
-[uid2](https://github.com/coreh/uid2)
+[Mongoose](https://www.npmjs.com/package/mongoose) <br>
+[Cloudinary](https://cloudinary.com/documentation/node_integration#node_js_getting_started_guide) <br>
+[Crypto-js](https://www.npmjs.com/package/crypto-js)<br>
+[uid2](https://github.com/coreh/uid2)<br>
 
 ### - Créer un compte
 
