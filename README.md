@@ -374,7 +374,7 @@ Réponse attendue de la requête :
 Cette route permet d'accèder à une seule annonce grâce à son id. <br>
 
 Exemple de requête sur Postman :
-http://localhost:3000/offer/5f087a45bbfccf1ad9d4317f
+"http://localhost:3000/offer/5f087a45bbfccf1ad9d4317f"
 
 Réponse attendue de la requête :
 
