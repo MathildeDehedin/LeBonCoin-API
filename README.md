@@ -374,49 +374,44 @@ Réponse attendue de la requête :
 Cette route permet d'accèder à une seule annonce grâce à son id. <br>
 
 Exemple de requête sur Postman :
-http://localhost:3000/offer/5f087d99e652391b1f3d1511
+http://localhost:3000/offer/5f087a45bbfccf1ad9d4317f
 
 Réponse attendue de la requête :
 
 ```
 {
-    "count": 1,
-    "offre": [
-        {
-            "_id": "5f087b246fdebe1ae947cf40",
-            "title": "Ordinateur portable MacBook ",
-            "description": "Ordinateur marque apple, état neuf",
-            "price": 1200,
-            "picture": {
-                "asset_id": "54ec209388242e1d47210e4e1af29bb6",
-                "public_id": "ezcyicy7zcrwza23ggds",
-                "version": 1594391331,
-                "version_id": "88776dd8c62e8bd7622535151aa47bba",
-                "signature": "d35238d3685f856efc6be92b82cf8fa7fd7c3d0e",
-                "width": 892,
-                "height": 820,
-                "format": "jpg",
-                "resource_type": "image",
-                "created_at": "2020-07-10T14:28:51Z",
-                "tags": [],
-                "bytes": 75876,
-                "type": "upload",
-                "etag": "dacf3e5285aeacaa9e6d5ba31577a355",
-                "placeholder": false,
-                "url": "http://res.cloudinary.com/dbxmpuzvk/image/upload/v1594391331/ezcyicy7zcrwza23ggds.jpg",
-                "secure_url": "https://res.cloudinary.com/dbxmpuzvk/image/upload/v1594391331/ezcyicy7zcrwza23ggds.jpg",
-                "original_filename": "upload_7e58371c6a81611b4c260ddf7e886ee9"
-            },
-            "creator": {
-                "account": {
-                    "username": "Thomas",
-                    "phone": "0606060606"
-                },
-                "_id": "5f086f12821db819e9d7c18c"
-            },
-            "created": "2020-07-10T14:28:52.376Z",
-            "__v": 0
-        }
-    ]
+    "_id": "5f087a45bbfccf1ad9d4317f",
+    "title": "Canapé gris angle 4 personnes",
+    "description": "Canapé d'angle bon état général",
+    "price": 740,
+    "picture": {
+        "asset_id": "4f4e1e8b1861b1faa5c8487a29a862d0",
+        "public_id": "nbbu7ytzqovlctcyuacg",
+        "version": 1594391109,
+        "version_id": "567a539b956993df40b2a9b1204e1a95",
+        "signature": "eca563569ddbf827f95cd0ac61104b146d36f40d",
+        "width": 500,
+        "height": 500,
+        "format": "jpg",
+        "resource_type": "image",
+        "created_at": "2020-07-10T14:25:09Z",
+        "tags": [],
+        "bytes": 8916,
+        "type": "upload",
+        "etag": "8bcd1e8e5430f32a3939178278717998",
+        "placeholder": false,
+        "url": "http://res.cloudinary.com/dbxmpuzvk/image/upload/v1594391109/nbbu7ytzqovlctcyuacg.jpg",
+        "secure_url": "https://res.cloudinary.com/dbxmpuzvk/image/upload/v1594391109/nbbu7ytzqovlctcyuacg.jpg",
+        "original_filename": "upload_127390c39c8902e2fb4c4912fc6880ba"
+    },
+    "creator": {
+        "account": {
+            "username": "Antoine",
+            "phone": "0606060606"
+        },
+        "_id": "5f086eef821db819e9d7c18b"
+    },
+    "created": "2020-07-10T14:25:09.757Z",
+    "__v": 0
 }
 ```
