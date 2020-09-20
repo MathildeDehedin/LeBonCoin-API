@@ -25,7 +25,7 @@ router.post("/offer/publish", isAuthenticated, async (req, res) => {
     // console.log(req.files.picture.path);
     // console.log(req.files.picture.name);
     // console.log(req.files.picture.type);
-    const picture = req.files.picture.path;
+    const picture = req.files.file.path;
     const description = req.fields.description;
     const title = req.fields.title;
     const price = req.fields.price;
