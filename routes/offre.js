@@ -170,6 +170,8 @@ router.get("/offer/with-count", async (req, res) => {
     let page = Number(req.query.page);
     let limit = Number(req.query.limit);
 
+    const count = await Offre.countDocuments(filters);
+
     const offre = await Offre.find(filters)
       .sort(sort)
       .skip((page - 1) * limit)
@@ -179,8 +181,6 @@ router.get("/offer/with-count", async (req, res) => {
         select: "account.username account.phone",
       });
 
-    const count = await Offre.countDocuments(filters);
-    //console.log(count);
     res.status(200).json({
       count: count,
       offre: offre,
