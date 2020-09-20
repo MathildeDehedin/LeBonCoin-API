@@ -14,6 +14,8 @@ const offreRoute = require("./routes/offre");
 app.use(offreRoute);
 const isAuthenticated = require("./middleware/isAuthenticated");
 app.use(isAuthenticated);
+const paymentRoute = require("./routes/payment");
+app.use(paymentRoute);
 
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
