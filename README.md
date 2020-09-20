@@ -11,7 +11,7 @@
 
 #### Route en post : **/user/sign_up** dans user.js
 
-La route "/user/sign_up" permet de créer un nouvel utilisateur dans la BDD. On vérifie que l'email n'est pas déjà présent en BDD et que tous les paramètres (email, username, phone & password via un hash et un salt) sont envoyés afin de créer un compte. <br>
+La route "/user/sign_up" permet de créer un nouvel utilisateur dans la BDD. On vérifie que l'email n'est pas déjà présent en BDD et que tous les paramètres (email, username & password via un hash et un salt) sont envoyés afin de créer un compte. <br>
 
 Exemple de requête :
 
@@ -19,7 +19,6 @@ Exemple de requête :
 {
     "email" : "pierre.dupont@yahoo.com",
     "username" : "pierre-dup",
-    "phone" : "0678901234",
     "password" : "pierre-dup"
 }
 ```
@@ -33,7 +32,6 @@ Réponse attendue de la requête :
     "token": "xZiEwe8ByeelpHK9",
     "account": {
         "username": "pierre-dup",
-        "phone": "0678901234"
     }
 }
 ```
@@ -61,7 +59,6 @@ Réponse attendue de la requête :
     "token": "xZiEwe8ByeelpHK9",
     "account": {
         "username": "pierre-dup",
-        "phone": "0678901234"
     }
 }
 ```
@@ -95,7 +92,6 @@ Réponse attendue de la requête :
     "creator": {
         "account": {
             "username": "pierre-dup",
-            "phone": "0678901234"
         },
         "_id": "5f65ecdd6a091004240ca957"
     },
@@ -237,7 +233,6 @@ Réponse attendue de la requête :
             "creator": {
                 "account": {
                     "username": "Antoine",
-                    "phone": "0606060606"
                 },
                 "_id": "5f086eef821db819e9d7c18b"
             },
@@ -272,7 +267,6 @@ Réponse attendue de la requête :
             "creator": {
                 "account": {
                     "username": "Thomas",
-                    "phone": "0606060606"
                 },
                 "_id": "5f086f12821db819e9d7c18c"
             },
@@ -307,7 +301,6 @@ Réponse attendue de la requête :
             "creator": {
                 "account": {
                     "username": "Marion",
-                    "phone": "0606060606"
                 },
                 "_id": "5f086f12821db819e9d7c18c"
             },
@@ -356,7 +349,6 @@ Réponse attendue de la requête :
             "creator": {
                 "account": {
                     "username": "Thomas",
-                    "phone": "0606060606"
                 },
                 "_id": "5f086f12821db819e9d7c18c"
             },
@@ -407,7 +399,6 @@ Réponse attendue de la requête :
     "creator": {
         "account": {
             "username": "Antoine",
-            "phone": "0606060606"
         },
         "_id": "5f086eef821db819e9d7c18b"
     },
