@@ -22,8 +22,7 @@ router.post("/user/sign_up", async (req, res) => {
 
       const email = req.fields.email;
       const username = req.fields.username;
-      const phone = req.fields.phone;
-      if (email && username && phone && password) {
+      if (email && username && password) {
         const newUser = new User({
           email: req.fields.email,
           token: token,
